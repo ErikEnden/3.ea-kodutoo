@@ -30,7 +30,7 @@ chrome.runtime.onMessage.addListener(function (response, sender, sendResponse) {
 chrome.contextMenus.onClicked.addListener(function () {
   authorize()
 })
-window.onload = function () {
+/* window.onload = function () {
   console.log('onload')
   chrome.storage.local.get('AuthToken', function (result) {
     console.log(result.AuthToken)
@@ -48,7 +48,7 @@ window.onload = function () {
       console.log(authToken)
     }
   })
-}
+} */
 function requestResults (searchString) {
   selectedType = 'track'
   console.log('result function')
