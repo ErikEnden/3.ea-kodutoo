@@ -69,10 +69,10 @@ function requestResults (searchString) {
     },
     success: function (res) {
       queryResponse = res
+      content = queryResponse.tracks
     },
     async: false
   })
-  content = queryResponse.tracks
 }
 function authorize () {
   console.log('auth function')
